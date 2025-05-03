@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Create a free professional resume in 10 minutes with easy to use templates.">
+  <meta name="keywords"
+    content="resume, builder, resume builder, free, fast resume, quick resume, easy resume, professional resume, portfolio">
+  <meta name="robots" content="index, follow">
+
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <title>Free Online Resume Builder</title>
+</head>
+
+<body>
+  <style>
+    .sideBySide {
+      display: grid;
+      align-items: center;
+    }
+
+    .home {
+      color: white;
+      text-decoration: none;
+      font-size: 3em;
+    }
+
+    .home:visited {
+      color: white;
+    }
+
+    body {
+      background: url("%PUBLIC_URL%/rbb.gif");
+      background-size: 100% 70vh;
+      background-repeat: no-repeat;
+    }
+
+    nav {
+      padding: 2vw 1vh;
+    }
+
+    * {
+      font-family: Helvetica, Arial, sans-serif;
+    }
+
+    .navInner1 {
+      grid-template-columns: 80% 20%;
+    }
+
+    .signup{
+      background-color: rgba(150,150,150,0.6); border-radius:10vw; padding: 2px; text-align:center
+    }
+    .signup:hover{
+      background-color: rgba(225,225,225,0.6)
+    }
+
+    
+
+    @media screen and (max-width:601px) {
+      .navInner1 {
+        grid-template-columns: 60% 40%;
+      }
+    }
+  </style>
+  
+  <nav>
+    <div class="sideBySide navInner1">
+      <div>
+        <a href="#/" data-discover="true" class="home">
+          RB
+        </a>
+      </div>
+      <div class="sideBySide" style="grid-template-columns:50% 50%">
+        <div style="color:white">
+          Log In
+        </div>
+        <div>
+          <p class="signup">
+            Sign Up
+          </p>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+</body>
+
+</html>
